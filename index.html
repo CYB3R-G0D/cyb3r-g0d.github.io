@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <script src="assets/app.js" defer></script>
+    <title>CYB3R G0D</title>
+</head>
+<body>
+    <div class="terminal" id="moveable">
+        <div class="handle" id="handle">
+            <div class="buttons">
+                <button>🗕</button>
+                <button>❐</button>
+                <button class="red" onclick="closeTerminal()">✕</button>
+            </div>
+        </div>
+        <div class="window">    
+            <p>Hi there, It’s nice to meet you.</p>
+            <p>Follow me on github
+                <a href="https://github.com/CYB3R-G0D/">@CYB3R-G0D</a>
+                <span>_</span>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    function closeTerminal() {
+        document.getElementById("moveable").remove();
+    }
+</script>
+</html>
