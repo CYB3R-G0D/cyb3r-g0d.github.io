@@ -13,23 +13,16 @@
     <div class="terminal" id="moveable">
         <div class="handle" id="handle">
             <div class="buttons">
-                <button>🗕</button>
-                <button>❐</button>
-                <button class="red" onclick="closeTerminal()">✕</button>
+                <button class="red" id="close">✕</button>
             </div>
         </div>
         <div class="window">    
-            <p>Hi there, It’s nice to meet you.</p>
-            <p>Follow me on github
+            <p id="firstTxt">Hi there, It’s nice to meet you.</p>
+            <p id="secTxt">Follow me on github
                 <a href="https://github.com/CYB3R-G0D/">@CYB3R-G0D</a>
                 <span>_</span>
             </p>
         </div>
     </div>
 </body>
-<script>
-    function closeTerminal() {
-        document.getElementById("moveable").remove();
-    }
-</script>
 </html>

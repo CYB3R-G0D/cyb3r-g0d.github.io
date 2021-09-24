@@ -1,20 +1,32 @@
+body {
+  background-color: #111;
+}
+
+/* .terminal {
+  margin: -220px 0 0 -220px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+} */
+
 .window{
-  padding:10px 20px;
+  padding:10px 0px;
   top:30px;
   left:10px;
   width:440px;
   height:280px;
   background:#000;
-  box-shadow:-1px -1px #b4b4b5,
-    1px 1px #fff;
+  border: solid 1px #b4b4b5;
+  border-top: none;
   font-size:28px;
   color:#5fbb46;
-  content:'';
   text-shadow:none;
 }
 
 .handle{
-  padding:0px 20px;
+  padding:0px 0px;
+  border:  solid 1px #b4b4b5;
+  border-bottom: none;
   top:30px;
   left:10px;
   height: auto;
@@ -34,8 +46,12 @@ button{
 }
 
 button:hover{
-    background-color: #ccc;
+    background-color: #b4b4b5;
     border: none;
+}
+
+.red {
+  background-color: #b4b4b5;
 }
 
 .red:hover{

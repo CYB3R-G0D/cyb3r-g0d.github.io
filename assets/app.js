@@ -52,3 +52,16 @@ function makeDragable(dragHandle, dragTarget) {
 }
 
 makeDragable('#handle', '#moveable')
+
+
+let close = document.getElementById("close");
+close.onclick = closeTerminal 
+function closeTerminal() {
+  document.getElementById("moveable").remove();
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.which == 13) {
+    window.location.replace("https://github.com/CYB3R-G0D/")
+  }
+}); 
