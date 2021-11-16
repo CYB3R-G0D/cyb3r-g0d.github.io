@@ -61,7 +61,20 @@ function closeTerminal() {
 }
 
 document.addEventListener("keydown", function(event) {
-  if (event.which == 13) {
-    window.location.replace("https://github.com/CYB3R-G0D/")
-  }
+//    if (event.which == 13) {
+//      window.location.replace("https://github.com/CYB3R-G0D/");
+//    }
+    if (event.which == 49) {
+      document.getElementById("input").innerHTML = "&gt; 1";
+      document.getElementById("secTxt").remove();
+      document.getElementById("input").id = "1";
+      document.getElementById("command").innerHTML = "1 follower · 1 following ·  13";
+      // TODO must update using an json api
+    } 
+    else if (event.which == 50) {
+      document.getElementById("input").innerHTML = "&gt; 2";
+      document.getElementById("secTxt").remove();
+      document.getElementById("input").id = "2";
+      document.getElementById("command").innerHTML = "SPY · Pwdlist3r · Mail-Hunter · Comicsru<br>Minetest-Mod-Maker · Orange-music  ·  AdAway";
+    }   
 }); 
